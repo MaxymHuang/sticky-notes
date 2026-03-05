@@ -1,0 +1,8 @@
+[project]
+name = "sticky-notes"
+version = "0.1.0"
+description = "A sticky notes desktop app for Windows 11"
+requires-python = ">=3.11"
+dependencies = [
+    "pyside6>=6.10.2",
+]
