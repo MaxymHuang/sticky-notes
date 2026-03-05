@@ -19,7 +19,9 @@ from PySide6.QtWidgets import (
     QColorDialog,
 )
 
-_RES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "resources")
+import sys
+_BASE_DIR = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+_RES_DIR = os.path.join(_BASE_DIR, "resources")
 
 from note_manager import NoteData, COLORS, DEFAULT_COLOR
 
